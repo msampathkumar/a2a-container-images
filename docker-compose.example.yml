@@ -1,0 +1,40 @@
+services:
+  a2a-adk-antigravity:
+    build:
+      context: .
+      dockerfile: images/a2a-adk-antigravity/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./workspaces/adk-antigravity:/workspace
+    restart: unless-stopped
+
+  a2a-openclaw:
+    build:
+      context: .
+      dockerfile: images/a2a-openclaw/Dockerfile
+    ports:
+      - "18789:18789"
+    volumes:
+      - ./workspaces/openclaw:/workspace
+    restart: unless-stopped
+
+  a2a-opencode:
+    build:
+      context: .
+      dockerfile: images/a2a-opencode/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./workspaces/opencode:/workspace
+    restart: unless-stopped
+
+  a2a-hermes:
+    build:
+      context: .
+      dockerfile: images/a2a-hermes/Dockerfile
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./workspaces/hermes:/workspace
+    restart: unless-stopped
