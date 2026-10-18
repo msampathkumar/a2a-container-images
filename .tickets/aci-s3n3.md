@@ -13,3 +13,9 @@ parent: aci-vwlr
 
 Docker image packaging A2A with Google Agent Development Kit (ADK) and Antigravity Harness Model
 
+
+## Notes
+
+**2026-10-18T00:17:17Z**
+
+2026-10-18 review: image passes scripts/validate_image.py (static). docker build UNVERIFIED (no Docker on oss-vm); left open until a build is recorded.

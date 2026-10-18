@@ -13,3 +13,9 @@ parent: aci-vwlr
 
 Docker image packaging A2A with OpenCode
 
+
+## Notes
+
+**2026-10-18T00:17:17Z**
+
+2026-10-18 review: passes static validator, but the Dockerfile installs only a2a-sdk/fastapi/uvicorn, not the runtime named in the title. Needs official install command + docker build (workflows/add-container-image.md). Left open.
