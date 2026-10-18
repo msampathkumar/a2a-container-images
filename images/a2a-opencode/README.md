@@ -4,7 +4,8 @@ This container image packages OpenCode with A2A protocol integration for agentic
 
 ## Usage
 
-Mount your working directory containing `.env` to `/workspace`:
+Mount your working directory containing `.env` and your A2A app to `/workspace`.
+The default `CMD` runs `uvicorn main:app`, so the folder needs a `main.py` that defines `app`:
 
 ```bash
 docker run -d \
